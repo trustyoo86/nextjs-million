@@ -26,4 +26,12 @@ function TestPage() {
   );
 }
 
+export const getServerSideProps = async () => {
+  return {
+    props: {
+      test: 1,
+    },
+  };
+};
+
 export default TestPage;
